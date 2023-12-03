@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ReelsFragment"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/startText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startChatting"
+            android:textColor="@color/accent1"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:fontFamily="@font/lato_bold"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TapTap"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:textColor="@color/accent1"
+            android:background="@drawable/custom_button_"
+            android:backgroundTint="@color/accent2"
+            android:textSize="14dp"
+            android:fontFamily="@font/lato_bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/startText"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/recentChat"-->
+<!--        android:textSize="36sp"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/chat_layout"
+        android:layout_marginTop="80dp"/>
+
+    <LinearLayout
+        android:id="@+id/proHead"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="100">
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Chats"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        android:fontFamily="@font/lato_bold"
+        android:layout_gravity="center"
+        android:layout_weight="85"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_notifications_24"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/cntct"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/add_chat"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

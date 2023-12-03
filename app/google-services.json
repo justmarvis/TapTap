@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "894976067283",
+    "firebase_url": "https://taptap-d8ac5-default-rtdb.firebaseio.com",
+    "project_id": "taptap-d8ac5",
+    "storage_bucket": "taptap-d8ac5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894976067283:android:9f09f7daf893d29224b626",
+        "android_client_info": {
+          "package_name": "com.amba.taptap"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfVY98eUODrYE4dx4RDCtwXygXOoFum_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

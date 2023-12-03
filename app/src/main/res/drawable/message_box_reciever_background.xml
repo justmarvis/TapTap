@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <item android:state_pressed="true">-->
+    <!--        <shape android:shape="rectangle">-->
+    <!--            <solid android:color="#FFF" /> &lt;!&ndash; Background color when button is pressed &ndash;&gt;-->
+    <!--            <corners android:radius="5dp" /> &lt;!&ndash; Border radius &ndash;&gt;-->
+    <!--            <stroke android:color="#000" android:width="0dp" /> &lt;!&ndash; Border color and width &ndash;&gt;-->
+    <!--        </shape>-->
+    <!--    </item>-->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/complimentary" /> <!-- Default background color -->
+            <corners android:topRightRadius="5dp"
+                    android:bottomLeftRadius="5dp"
+                    android:bottomRightRadius="5dp"
+                    android:topLeftRadius="0dp"/> <!-- Border radius -->
+        </shape>
+    </item>
+</selector>

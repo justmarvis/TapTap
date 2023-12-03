@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".views.MessageActivity">
+
+    <LinearLayout
+        android:id="@+id/proHead"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/bckBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/complimentary"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/mainDiv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:background="#80949494"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/proHead"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="246dp"
+        android:layout_below="@id/mainDiv">
+
+        <LinearLayout
+            android:id="@+id/maccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/proHead"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/baseline_account_circle_24"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Profile"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/CS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/baseline_chat_bubble_24"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Chats/Storage"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/baseline_notification_important_24"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Notifications"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/permissions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/baseline_perm_device_information_24"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Permissions"
+                android:layout_marginBottom="20dp"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="10dp"
+                android:background="#80949494" />
+
+            <TextView
+                android:id="@+id/access"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/baseline_accessibility_new_24"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Accessibility"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/lang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/baseline_language_24"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Languages"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/baseline_lock_24"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Privacy"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+
+            <TextView
+                android:id="@+id/Help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/baseline_help_center_24"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center"
+                android:text="Help/Support"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="20dp"
+                android:background="#80949494" />
+
+            <TextView
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                android:drawableEnd="@drawable/baseline_keyboard_arrow_right_24"
+                android:fontFamily="@font/lato_italic"
+                android:gravity="center"
+                android:text="logout"
+                android:textAlignment="textStart"
+                android:textColor="@color/warning"
+                android:textSize="16sp"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".views.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="246dp">
+
+
+        <!-- Your content goes here -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="50dp"
+            android:paddingBottom="50dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".views.LoginActivity"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/selectphoto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/baseline_camera_alt_24"
+                    android:backgroundTint="@color/primary"
+                    app:layout_constraintBottom_toBottomOf="@+id/selectPhoto"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/selectPhoto"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="TODO" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/selectPhoto"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/input_field"
+                android:hint="Email"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent1" />
+
+            <EditText
+                android:id="@+id/Username"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/input_field"
+                android:hint="Username"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent1" />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/input_field"
+                android:hint="Password"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/passwordFormat"
+                android:textColor="@color/accent1"
+                android:layout_marginBottom="15dp"/>
+
+
+            <EditText
+                android:id="@+id/CPassword"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/input_field"
+                android:hint="Confirm Password"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/accent1" />
+
+            <Button
+                android:id="@+id/agreeBtn"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/custom_buttons"
+                android:text="T &amp; C AGREEMENT"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/regBtn"
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_button_"
+                android:text="REGISTER"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/LAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Already have an account? Log In"
+                    android:textColor="@color/primary"
+                    android:fontFamily="@font/lato_black"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/regDisclamer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text="By Signing up, you agree to Photo's terms of Service and privacy Policy"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

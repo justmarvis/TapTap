@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment"
+    android:background="@color/white">
+
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:id="@+id/appBar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:cardElevation="5dp">-->
+
+    <!--        <androidx.appcompat.widget.Toolbar-->
+    <!--            android:id="@+id/toolbar"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:background="@color/complimentary"-->
+    <!--            app:menu="@menu/toolbar">-->
+
+    <!--            &lt;!&ndash;            <ImageView&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_width="30dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:layout_height="30dp"&ndash;&gt;-->
+    <!--            &lt;!&ndash;                android:src="@drawable/baseline_arrow_back_24"/>&ndash;&gt;-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:src="@drawable/baseline_arrow_back_24"/>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/appName"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginLeft="30dp"-->
+    <!--                android:text="@string/app_name"-->
+    <!--                android:textColor="@color/accent1"-->
+    <!--                android:textSize="20sp"-->
+    <!--                android:fontFamily="@font/lato_bold"/>-->
+
+    <!--        </androidx.appcompat.widget.Toolbar>-->
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+
+        <ImageView
+            android:id="@+id/bckBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/baseline_arrow_back_24"
+            android:backgroundTint="@color/complimentary" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="246dp"
+        android:layout_below="@+id/bckBtn">
+
+        <!-- TODO: Update blank fragment layout -->
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="25dp"
+            android:paddingBottom="50dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".views.LoginActivity"
+                android:layout_marginBottom="20dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/proImage"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:src="@mipmap/ic_launcher"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:id="@+id/selectphoto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/baseline_camera_alt_24"
+                    android:backgroundTint="#80F4AA42"
+                    app:layout_constraintBottom_toBottomOf="@+id/proImage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/proImage"
+                    tools:ignore="MissingConstraints"
+                    android:contentDescription="TODO" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:hint="@string/editFullname"
+                android:textColorHint="@color/accent1"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/lato_bold"
+                android:paddingStart="20dp"
+                android:padding="15dp"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/outline_create_24"
+                android:drawableTint="@color/accent1"
+                android:background="@drawable/input_field"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                tools:ignore="RtlCompat" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/editUsername"
+                android:textColorHint="@color/accent1"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/lato_bold"
+                android:paddingStart="20dp"
+                android:padding="15dp"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/outline_create_24"
+                android:drawableStart="@drawable/at_solid"
+                android:drawablePadding="5dp"
+                android:background="@drawable/input_field"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                tools:ignore="RtlCompat" />
+
+            <EditText
+                android:id="@+id/bio"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/editBio"
+                android:textSize="14sp"
+                android:textColorHint="@color/accent1"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/lato_bold"
+                android:paddingStart="20dp"
+                android:padding="15dp"
+                android:drawableEnd="@drawable/outline_create_24"
+                android:drawableTint="@color/accent1"
+                android:background="@drawable/input_field"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                tools:ignore="RtlCompat" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:hint="website"
+                android:textColorHint="@color/accent1"
+                android:textColor="@color/accent1"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/lato_bold"
+                android:paddingStart="20dp"
+                android:padding="15dp"
+                android:drawablePadding="5dp"
+                android:textSize="14sp"
+                android:drawableEnd="@drawable/outline_create_24"
+                android:drawableTint="@color/accent1"
+                android:background="@drawable/input_field"
+                android:layout_marginBottom="30dp"
+                android:layout_gravity="center"
+                tools:ignore="RtlCompat" />
+
+            <EditText
+                android:id="@+id/country"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/input_field"
+                android:drawableEnd="@drawable/outline_create_24"
+                android:drawableTint="@color/accent1"
+                android:fontFamily="@font/lato_bold"
+                android:hint="Country"
+                android:padding="15dp"
+                android:paddingStart="20dp"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:textAlignment="textStart"
+                android:textColorHint="@color/accent1"
+                android:layout_gravity="center"
+                tools:ignore="RtlCompat" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="320dp"
+                android:layout_height="match_parent"
+                android:text="@string/save"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/lato_black"
+                android:background="@drawable/custom_button_"
+                android:layout_marginBottom="50dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:weightSum="100">
+
+    <ImageView
+        android:id="@+id/msg_txt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/message_box_reciever_background"
+        android:src="@mipmap/ic_launcher_foreground"
+        android:padding="5dp"
+        android:text="This is a sample text"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:maxWidth="100dp"
+        android:fontFamily="@font/lato_bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/holder"
+        android:layout_toRightOf="@+id/msg_txt"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/lato_bolditalic"
+        android:textColor="#59949494"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>
